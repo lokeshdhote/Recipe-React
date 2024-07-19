@@ -7,7 +7,7 @@ const Recipes = () => {
 const {pathname}  =  useLocation()
 
 const {recipes} = useSelector((state)=> state.recipeReducer)
-    
+    console.log(recipes);
 // const recipes = [
     //     {
     //         id: "mAi6vrfNOmNe1LdgZ_MTd",

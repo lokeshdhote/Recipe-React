@@ -28,7 +28,7 @@ const dispatch = useDispatch()
         };
 
 
-    
+    console.log(newRecipe);
        dispatch(asyncAdd(newRecipe))
         toast.success("Recipe Created Successfully!");
 navigate("/recipes")
@@ -40,7 +40,7 @@ navigate("/recipes")
                 Create <br /> New Recipe
             </h1>
             <input
-             required="true"
+            
                 onChange={(e) => setimage(e.target.value)}
                 value={image}
                 type="url"
@@ -49,7 +49,7 @@ navigate("/recipes")
             />
             
             <input
-            required="true"
+           
                 onChange={(e) => settitle(e.target.value)}
                 value={title}
                 type="text"
@@ -57,21 +57,21 @@ navigate("/recipes")
                 placeholder="Recipe Name"
             />
             <textarea
-             required="true"
+            
                 onChange={(e) => setdescription(e.target.value)}
                 value={description}
                 className="w-full border rounded-md px-6 py-3 text-lg mb-5"
                 placeholder="recipe description..."
             ></textarea>
             <textarea
-             required="true"
+            
                 onChange={(e) => setingredients(e.target.value)}
                 value={ingredients}
                 className="w-full border rounded-md px-6 py-3 text-lg mb-5"
                 placeholder="recipe ingredients -> 'use comma to seperate ingredients'..."
             ></textarea>
             <textarea
-             required="true"
+            
                 onChange={(e) => setinstructions(e.target.value)}
                 value={instructions}
                 className="w-full border rounded-md px-6 py-3 text-lg mb-5"
